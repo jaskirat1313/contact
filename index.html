@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Lunch Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="app.js"></script>
+    
+    <style>
+      .message { font-size: 1.3em; font-weight: bold; }
+    </style>
+  </head>
+  
+  <body ng-app="ContactCheck">
+    <div class="container" ng-controller="ContactCheckController">
+      <h1>Extractor of Whatsapp Group Number</h1>
+          <div class="form-group">
+              <span style="font-weight: bold">Add your whatsapp group contact list here</span>
+              <textarea id="lunch-menu"
+              placeholder="Add your whatsapp group contact list here"
+              class="form-control" 
+              ng-model="contactMenu"></textarea>
+              
+          </div>
+          <div class="form-group">
+              <button class="btn btn-default" ng-click="contactCheck()" >Check If Too Much</button>
+          </div>
+         
+          <div class="form-group message" id="demo" >
+           
+          </div>
+          <div class="form-group message">
+            <span style=color:{{color}}>
+              
+
+                 {{message}}
+                 
+                
+
+            </span>
+          </div>
+    </div>
+ 
+
+</body>
+</html>
