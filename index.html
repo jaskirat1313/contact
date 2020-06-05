@@ -15,17 +15,22 @@
   <body ng-app="ContactCheck">
     <div class="container" ng-controller="ContactCheckController">
       <h1>Extractor of Whatsapp Group Number</h1>
-          <div class="form-group">
-              <span style="font-weight: bold">Add your whatsapp group contact list here</span>
-              <textarea id="lunch-menu"
-              placeholder="Add your whatsapp group contact list here"
-              class="form-control" 
-              ng-model="contactMenu"></textarea>
-              
-          </div>
-          <div class="form-group">
-              <button class="btn btn-default" ng-click="contactCheck()" >Check If Too Much</button>
-          </div>
+      <form>
+        <div class="form-group">
+          <span style="font-weight: bold">Add your whatsapp group contact list here</span>
+          <textarea id="lunch-menu"
+          placeholder='"91700000700,7000700070"'
+          class="form-control" 
+          ng-model="contactMenu"></textarea>
+          
+      </div>
+      <div class="form-group">
+        <button type="reset" class="btn btn-default" >Reset</button>
+          <button class="btn btn-default" ng-click="contactCheck()" >Submit</button>
+      </div>
+
+      </form>
+          
          
           <div class="form-group message" id="demo" >
            
